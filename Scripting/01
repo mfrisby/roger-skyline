@@ -1,0 +1,11 @@
+#!/bin/bash
+USERS=`cat /etc/passwd | cut -d ':' -f1`
+
+for USR in $USERS
+do
+	echo "$USR" 
+	cat /etc/passwd | grep $USR | cut -d ':' -f3
+	cat /etc/passwd | grep $USR | cut -d ':' -f6
+done
+
+
