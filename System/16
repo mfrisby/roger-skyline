@@ -1,1 +1,5 @@
-crontab 
+cron
+exemple:
+
+00 04 * * 1 <task>
+lance <task> tous les lundi à 04H00 

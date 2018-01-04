@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo apt-get update > /var/log/update_script.log
+sudo apt-get upgrade -y > /var/log/update_script.log
+
+#crontab -e
+#00 04 * * 1 tous les lundi à 4h
+#ajout de la tache dans le fichier
