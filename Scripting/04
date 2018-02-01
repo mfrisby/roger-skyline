@@ -1,0 +1,6 @@
+#!/bin/bash
+body="/etc/crontab file has been modified."
+if [inotifywatch -e modify /etc/crontab]
+then
+    echo $body | mail -s "crontab notify" root@debian
+fi
